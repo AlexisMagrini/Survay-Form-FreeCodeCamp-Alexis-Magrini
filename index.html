@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Encuesta</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    </head>
+    <body class="m-0 vh-100 row justify-content-center align-item-center" style="background-image: url(https://frigorificosdefarmacia.com/wp-content/uploads/2014/10/Light-Texture-Blue-Background-HD-Wallpaper.jpg)">
+      <div class="col-auto align-self-center bg-primary bg-gradient shadow-lg p-3 mb-5 mt-5 rounded border border-primary">
+   <div class="titulo text-white text-center">
+        <h1 id="title">
+            ¡Queremos conocerte!
+        </h1>
+    </div>    
+    <div class="sub-titulo text-white text-center"> 
+        <p id="description">
+            Este es un pequeño formulario realizado para FreeCodeCamp  
+        </p>
+    </div>
+    <form id="survey-form">
+<!-- CAMPOS RELLENABLES--> 
+        <fieldset>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label class="text-white" for="name" id="name-label">Nombre </label>
+                        <input type="text" id="name" class="form-control" required="" placeholder="Escriba su Nombre">
+                      </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label class="text-white" for="email" id="email-label">Email: </label>
+                    <input type="email" id="email" class="form-control" required="" placeholder="Escriba su dirección de email">
+                    
+                  </div>
+            </div>
+            <div>
+                <label class="text-white mb-2 mt-2" id="number-label">¿Cuantos años tiene? 
+                </label>
+                <input type="number" id="number" class="form-control" required="" min="10" max="100" placeholder="Seleccione su edad">
+            </div>
+        </fieldset>
+<!-- SELECTOR DESPLEGABLE--> 
+        <fieldset class="mt-3">
+            <label class="text-white mb-2" id="dropdown-label">¿Cuál es tu rol? 
+            </label>
+            <select 
+                class="form-select" 
+                aria-label="Default select example"
+                id="dropdown">
+                    <option selected>Selecciona la indicada</option>
+                    <option value="1">Freelancer</option>
+                    <option value="2">Empresa</option>
+                    <option value="3">Hobbie</option>
+              </select>
+        </fieldset>
+<!-- BOTONES DE RADIO--> 
+                <label class="text-white mb-2 mt-3" id="check-label">¿En que área te destacas más? 
+                </label>
+                <div class="d-flex flex-row justify-content-evenly">
+                <div class="form-check text-white col-sm-3">
+                    <div class="form-check">
+           <label>
+           <input name="area" value="diseno-web" type="radio" class="form-check-input">Diseño Web
+         </label>
+    </div>
+            </div>
+                <div class="form-check text-white col-sm-3">
+                    <label>
+           <input name="area" value="diseno-grafico" type="radio" class="form-check-input">Diseño Gráfico
+         </label>
+            </div>
+
+                <div class="form-check text-white col-sm-3">
+                                            <label>
+           <input name="area" value="diseno-ui" type="radio" class="form-check-input">Diseño UX/UI
+         </label>
+                </div>
+                <div class="form-check text-white col-sm-3">
+                    <label>
+           <input name="area" value="arte-digital" type="radio" class="form-check-input">Arte Digital
+         </label>
+            </div>
+        </div> 
+<!-- BOTONES DE CHECKBOX--> 
+            <fieldset>
+                <label class="text-white mb-2 mt-3" id="check-label">¿Te gustaría recibir información sobre tu elección?                
+                </label> 
+                <div class="form-check text-white">
+                    <input
+                        class="form-check-input"   
+                        type="checkbox" 
+                        value="Si" 
+                        name="Si"/>
+                    <label 
+                        class="form-check-label">
+                          Si 
+                    </label>
+                </div>
+                <div class="form-check text-white">
+                    <input
+                        class="form-check-input"   
+                        type="checkbox" 
+                        value="No" 
+                        name="No"/>
+                    <label 
+                        class="form-check-label">
+                          No 
+                    </label>
+                </div>
+            </fieldset>
+<!-- TEXTO DE ÁREA--> 
+            <fieldset>
+                <label class="text-white mb-2 mt-3" id="textarea-label">Dejanos tu opinión.                
+                </label> 
+                <div class="form-floating">
+                    <textarea name="text-area" class="form-control" placeholder="Texto de área" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Escriba una breve descripción</label>
+                  </div>
+            </fieldset>
+<!-- BOTÓN ENVIAR--> 
+<fieldset>
+    <button id="submit" type="submit" class="btn btn-light mt-4">Enviar</button>
+</fieldset>
+    </form>
+</div>
+      </body>
+  <html>
